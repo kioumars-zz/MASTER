@@ -33,7 +33,7 @@ and ...
 
 Download project's 3 files from MASTER repository and copy in your folder
 
-your folder__
+your-folder__
              |__HMDB51__
              |          |__run
              |          |__sit
@@ -42,5 +42,31 @@ your folder__
              |__estekhraj.py
              |__dataset_maker.py
              |__result.py
+             
+After run you have this:
+
+your-folder__
+             |__HMDB51__
+             |          |__run
+             |          |__sit
+             |          |__...
+             |
+             |__doc...__
+             |          |__...
+             |      
+             |__image...__
+             |             |__...
+             |
+             |__kmeans...__
+             |             |__...
+             |
+             |__periogram...__
+             |                |__...
+             |
+             |__Image_error_list.txt
+             |__estekhraj.py
+             |__dataset_maker.py
+             |__result.py
+
              
              
