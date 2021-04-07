@@ -26,6 +26,7 @@ conda install -c anaconda keras
 conda install -c anaconda pandas
 conda install -c anaconda seaborn
 conda install -c anaconda tensorflow
+conda install -c anaconda matplotlib
 conda install -c anaconda scikit-learn
 and ...
 
