@@ -30,3 +30,5 @@ conda install -c anaconda scikit-learn
 conda install -c anaconda keras
 and ...
 
+
+Download project file's from MASTER repository and copy in your folder
