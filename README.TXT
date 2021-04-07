@@ -43,7 +43,7 @@ your-folder__
              |__dataset_maker.py
              |__result.py
              
-After run you have this:
+After run ( ESTEKHRAJ.PY ) you have this:
 
 your-folder__
              |__HMDB51__
