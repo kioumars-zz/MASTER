@@ -1,5 +1,3 @@
-# MASTER
-
 This codes run easyest in linux
 
 Make your folder and Execute commands from the command line inside the folder
@@ -29,7 +27,6 @@ conda install -c anaconda tensorflow
 conda install -c anaconda matplotlib
 conda install -c anaconda scikit-learn
 and ...
-
 
 Download project's 3 files from MASTER repository and copy in your folder same az this:
 
