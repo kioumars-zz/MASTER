@@ -31,7 +31,7 @@ conda install -c anaconda scikit-learn
 and ...
 
 
-Download project's 3 files from MASTER repository and copy in your folder
+Download project's 3 files from MASTER repository and copy in your folder same az this:
 
 your-folder__
              |__HMDB51__
