@@ -32,3 +32,15 @@ and ...
 
 
 Download project's 3 files from MASTER repository and copy in your folder
+
+your folder__
+             |__HMDB51__
+             |          |__run
+             |          |__sit
+             |          |__...
+             |
+             |__estekhraj.py
+             |__dataset_maker.py
+             |__result.py
+             
+             
