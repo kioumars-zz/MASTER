@@ -28,5 +28,5 @@ conda install -c anaconda seaborn
 conda install -c anaconda pandas
 conda install -c anaconda scikit-learn
 conda install -c anaconda keras
-
+and ...
 
