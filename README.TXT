@@ -4,7 +4,7 @@ This codes run easyest in linux
 
 Make your folder and Execute commands from the command line inside the folder
 
-you must update ubuntu:
+You must update ubuntu:
 
 sudo apt update
 sudo apt upgrade
@@ -21,7 +21,12 @@ OR
 pip3 install opencv-python
 
 
-You need to install Other libraries from CONDA, Same as Tensorflow2  and  etc.
+You must install Other libraries from CONDA :
 
+conda install -c anaconda tensorflow
 conda install -c anaconda seaborn
+conda install -c anaconda pandas
+conda install -c anaconda scikit-learn
+conda install -c anaconda keras
+
 
