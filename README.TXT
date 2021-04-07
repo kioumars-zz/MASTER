@@ -20,7 +20,6 @@ sudo apt-get install python3-opencv
 OR
 pip3 install opencv-python
 
-
 You must install Other libraries from CONDA :
 
 conda install -c anaconda tensorflow
