@@ -22,11 +22,11 @@ pip3 install opencv-python
 
 You must install Other libraries from CONDA :
 
-conda install -c anaconda tensorflow
-conda install -c anaconda seaborn
-conda install -c anaconda pandas
-conda install -c anaconda scikit-learn
 conda install -c anaconda keras
+conda install -c anaconda pandas
+conda install -c anaconda seaborn
+conda install -c anaconda tensorflow
+conda install -c anaconda scikit-learn
 and ...
 
 
