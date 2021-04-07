@@ -14,7 +14,7 @@ Download and Install anaconda latest version from https://www.anaconda.com/produ
 
 Download and extract HMDB51 dataset from https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/#Downloads
 
-Install OPENCV2 :
+For Install OPENCV2 use this:
 
 sudo apt-get install python3-opencv
 OR
