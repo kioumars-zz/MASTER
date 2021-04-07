@@ -1,9 +1,21 @@
 # MASTER
+
 This codes run easyest in linux
+
+Make your folder and Execute commands from the command line inside the folder
+
+you must update ubuntu:
+
+sudo apt update
+sudo apt upgrade
+audo apt autoremove
 
 Download and Install anaconda latest version from https://www.anaconda.com/products/individual#linux 
 
-Download HMDB51 dataset from https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/#Downloads
+Download and extract HMDB51 dataset from https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/#Downloads
+
+Install OPENCV2 
+
 
 You need to install Other libraries from CONDA, Same as OPENCV2,  Tensorflow2  and  etc.
 
