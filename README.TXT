@@ -64,6 +64,8 @@ your-folder__
              |__estekhraj.py
              |__dataset_maker.py
              |__result.py
+             
+you need 2:20 second for make one periogram image and HMDB51 have 6849 videos. if you dont have time for making, you  will  download it from my google drive :              
 
              
              
