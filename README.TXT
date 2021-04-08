@@ -52,15 +52,15 @@ your-folder__
              |                        |       |__kmeans___
              |__estekhraj.py          |       |           |__...
              |                        |       |__periogram__  
-             |__dataset_maker.py      |       |             |__...
-             |                        |       |       
-             |__result.py             |       |__Periogram_list.txt    
-                                      |       |__Linepoint_list.txt          
-                                      |__sit__ 
-                                      |       |_...
-                                      |__...
+             |__dataset_maker.py      |__sit__              |__...
+             |                        |       |_...              
+             |__result.py             |__...           
                                       |
-                                      |__video_error_list.txt ( If it happened )
+                                      |__Periogram_list.txt
+                                      |
+                                      |__Linepoint_list.txt
+                                      |
+                                      |__video_error_list.txt ( If it happened ) 
              
 you need 2:20 second for make one periogram image and HMDB51 have 6849 videos. if you dont have time for making, you  will  download it from my google drive :              
 
