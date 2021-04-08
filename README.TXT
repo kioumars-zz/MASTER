@@ -44,19 +44,20 @@ After run ( ESTEKHRAJ.PY ) you have this:
 
 your-folder__
              |__opticalflow_proj_...__
-             |                        |__doc__
-             |__HMDB51__              |       |__...
-             |          |__run        |
-             |          |__sit        |__image__
-             |          |__...        |         |__...
-             |                        |
-             |__estekhraj.py          |__kmeans__    
-             |                        |          |__...
-             |__dataset_maker.py      |         
-             |                        |__periogram__
-             |__result.py             |             |__...
-                                      |             
-                                      |__Image_error_list.txt
+             |                        |__run__   
+             |__HMDB51__              |       |__doc__               
+             |          |__run        |       |       |__...
+             |          |__sit        |       |__image__
+             |          |__...        |       |         |__...
+             |                        |       |__kmeans__
+             |__estekhraj.py          |       |          |__...
+             |                        |       |__periogram__  
+             |__dataset_maker.py      |                     |__...
+             |                        |__sit__        
+             |__result.py             |       |_...    
+                                      |__...             
+                                      | 
+                                      |__video_error_list.txt 
              
 you need 2:20 second for make one periogram image and HMDB51 have 6849 videos. if you dont have time for making, you  will  download it from my google drive :              
 
