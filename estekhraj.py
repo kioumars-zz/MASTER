@@ -99,8 +99,7 @@ for x3 in range(0,len(video_fol_arry[0])):
              print(" >>> Your VIDEO file ( "+ str(video_fol_arry[0][bb11]) +"/"+ str(video_fol_arry[aa11][cc11])  +" ) very small for cuting !!! <<< " )
              print()
              f.close()
-             time.sleep(1)
-
+             exit()
 
          a = int(((frames)-3) / (tedadax+1) )
          print()
@@ -165,7 +164,9 @@ for x3 in range(0,len(video_fol_arry[0])):
              print(" >>> Error in cuting Video ( "+  str(video_fol_arry[0][bb11]) +"/"+ str(video_fol_arry[aa11][cc11])  +" ) !!! <<< " ) 
              print()
              f.close()
-             time.sleep(1) 
+             exit()
+
+
 
          f = open(path3+str(video_fol_arry[0][ejra])+"/doc/"+str(video_fol_arry[aa11][cc11])+"_image_name_list.txt", "r")
          l = [x for x in f.readlines() if x != "\n"]
