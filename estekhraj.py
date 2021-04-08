@@ -48,6 +48,7 @@ print()
 a = 0
 for x1 in range(0,len(video_fol_arry[0])):
      video_fol_arry.append((os.listdir(path2+video_fol_arry[0][a]+"/")))
+     video_fol_arry[a+1].sort()
      a+=1
 print()
 print("video_fol_arry + file name ==> " ,video_fol_arry)
@@ -64,9 +65,7 @@ aa11 = 1
 
 bb11 = 0
 
-cc11 = 0
-
-tedadax = 16
+dd11 = 0
 
 ejra = 0
 
@@ -78,11 +77,15 @@ for x3 in range(0,len(video_fol_arry[0])):
      a=0
      for x4 in range(0,len(fol_org)):
          esm2 = fol_org[a]
-         os.makedirs(path3+str(video_fol_arry[0][ejra])+"/"+esm2) 
+         os.makedirs(path3+str(video_fol_arry[0][dd11])+"/"+esm2) 
          a+=1
 
+     cc11 = 0
+
+     tedadax = 16
 
      for x5 in range(0,len(video_fol_arry[aa11])):
+
          data = cv2.VideoCapture( path2 + str(video_fol_arry[0][bb11]) +"/"+ str(video_fol_arry[aa11][cc11]) )
          frames = data.get(cv2.CAP_PROP_FRAME_COUNT) 
          fps = int(data.get(cv2.CAP_PROP_FPS)) 
@@ -100,6 +103,7 @@ for x3 in range(0,len(video_fol_arry[0])):
              print()
              f.close()
              exit()
+
 
          a = int(((frames)-3) / (tedadax+1) )
          print()
@@ -132,18 +136,19 @@ for x3 in range(0,len(video_fol_arry[0])):
          print()
          print("image number ==> " , len(tedadarry))
 
-
          if len(tedadarry) == (tedadax+1):
 
-             f = open(path3+str(video_fol_arry[0][ejra])+"/doc/"+str(video_fol_arry[aa11][cc11])+"_image_name_list.txt", "a")
+             f = open(path3+str(video_fol_arry[0][dd11])+"/doc/"+str(video_fol_arry[aa11][cc11])+"_image_name_list.txt", "a")
+
              qp = 0
+
              for x7 in range(0,len(tedadarry)):
 
                  data.set(cv2.CAP_PROP_POS_FRAMES, tedadarry[qp]   )
 
                  ret,frame = data.read()
 
-                 name = path3+str(video_fol_arry[0][ejra])+'/image/'+str(video_fol_arry[aa11][cc11])+'_image-' + str(tedadarry[qp]) +'.jpg'
+                 name = path3+str(video_fol_arry[0][dd11])+'/image/'+str(video_fol_arry[aa11][cc11])+'_image-' + str(tedadarry[qp]) +'.jpg'
 
                  print()
                  print ('Creating...' + name) 
@@ -167,8 +172,7 @@ for x3 in range(0,len(video_fol_arry[0])):
              exit()
 
 
-
-         f = open(path3+str(video_fol_arry[0][ejra])+"/doc/"+str(video_fol_arry[aa11][cc11])+"_image_name_list.txt", "r")
+         f = open(path3+str(video_fol_arry[0][dd11])+"/doc/"+str(video_fol_arry[aa11][cc11])+"_image_name_list.txt", "r")
          l = [x for x in f.readlines() if x != "\n"]
          f.close()
 
@@ -176,7 +180,7 @@ for x3 in range(0,len(video_fol_arry[0])):
          print("len(l) ==> " ,len(l))
 
          new_image_name_arry=[]
-         f = open(path3+str(video_fol_arry[0][ejra])+"/doc/"+str(video_fol_arry[aa11][cc11])+"_image_name_list.txt", "r")
+         f = open(path3+str(video_fol_arry[0][dd11])+"/doc/"+str(video_fol_arry[aa11][cc11])+"_image_name_list.txt", "r")
 
          for x8 in range(0,len(l)):
              k=f.readline()[:-1]
@@ -205,9 +209,9 @@ for x3 in range(0,len(video_fol_arry[0])):
 
          for x9 in range(0,len(l)-1):
 
-             first_frame = cv2.imread(path3+str(video_fol_arry[0][ejra])+"/image/" + new_image_name_arry[plp1])
+             first_frame = cv2.imread(path3+str(video_fol_arry[0][dd11])+"/image/" + new_image_name_arry[plp1])
 
-             second_frame = cv2.imread(path3+str(video_fol_arry[0][ejra])+"/image/" + new_image_name_arry[plp2])
+             second_frame = cv2.imread(path3+str(video_fol_arry[0][dd11])+"/image/" + new_image_name_arry[plp2])
 
              first_frame_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY)
 
@@ -230,7 +234,7 @@ for x3 in range(0,len(video_fol_arry[0])):
 
              fx, fy = flow[y,xx11].T
 
-             f = open(path3+str(video_fol_arry[0][ejra])+"/doc/"+str(video_fol_arry[aa11][cc11])+ "_Opticalflow.txt", "a")
+             f = open(path3+str(video_fol_arry[0][dd11])+"/doc/"+str(video_fol_arry[aa11][cc11])+ "_Opticalflow.txt", "a")
 
              i = 0
 
@@ -285,12 +289,12 @@ for x3 in range(0,len(video_fol_arry[0])):
              plt.ylabel('Zavie')
     
 
-             plt.savefig(path3+str(video_fol_arry[0][ejra])+'/kmeans/'+ str(video_fol_arry[aa11][cc11]) +"_Kmeans-"+str(tedad+1)+".png")
+             plt.savefig(path3+str(video_fol_arry[0][dd11])+'/kmeans/'+ str(video_fol_arry[aa11][cc11]) +"_Kmeans-"+str(tedad+1)+".png")
              plt.close()
 
              cv2.waitKey(10)
 
-             pop=cv2.imread(path3+str(video_fol_arry[0][ejra])+'/kmeans/'+ str(video_fol_arry[aa11][cc11]) +"_Kmeans-"+str(tedad+1)+".png")
+             pop=cv2.imread(path3+str(video_fol_arry[0][dd11])+'/kmeans/'+ str(video_fol_arry[aa11][cc11]) +"_Kmeans-"+str(tedad+1)+".png")
              cv2.imshow('K means', pop)
 
              print()
@@ -338,7 +342,7 @@ for x3 in range(0,len(video_fol_arry[0])):
              print()
              print("ooo ==> ",ooo ,"\n")
 
-             f = open(path3+str(video_fol_arry[0][ejra])+"/doc/"+ str(video_fol_arry[aa11][cc11]) +"_Linepoint.txt", "a")
+             f = open(path3+str(video_fol_arry[0][dd11])+"/doc/"+ str(video_fol_arry[aa11][cc11]) +"_Linepoint.txt", "a")
 
              dd = 0
              for x13 in range(len(ooo)):
@@ -365,7 +369,7 @@ for x3 in range(0,len(video_fol_arry[0])):
 
              cv2.imshow("Periogram", imagelines)
  
-             cv2.imwrite(path3+str(video_fol_arry[0][ejra])+"/periogram/"+ str(video_fol_arry[aa11][cc11]) +"_Periogram.jpg", imagelines)
+             cv2.imwrite(path3+str(video_fol_arry[0][dd11])+"/periogram/"+ str(video_fol_arry[aa11][cc11]) +"_Periogram.jpg", imagelines)
 
              cv2.waitKey(20)
 
@@ -412,7 +416,7 @@ for x3 in range(0,len(video_fol_arry[0])):
  
              cv2.imshow('Single Frames Opticalflow', l)
 
-             namea = path3+str(video_fol_arry[0][ejra])+"/image/"+ str(video_fol_arry[aa11][cc11]) +'_image_sabz-' + str(abc) +'.jpg'
+             namea = path3+str(video_fol_arry[0][dd11])+"/image/"+ str(video_fol_arry[aa11][cc11]) +'_image_sabz-' + str(abc) +'.jpg'
 
              cv2.imwrite(namea, l) 
 
@@ -429,11 +433,13 @@ for x3 in range(0,len(video_fol_arry[0])):
              print()
              print("TEDAD Image ==> ",  tedad)
 
-         f = open( path3 + str(video_fol_arry[0][ejra]) + "/Linepoint_list.txt", "a")
+
+
+         f = open( path3 + str(video_fol_arry[0][dd11]) + "/Linepoint_list.txt", "a")
          f.write( str(video_fol_arry[aa11][cc11]) +"_Linepoint.txt" + "\n")
          f.close()
 
-         f = open( path3+str(video_fol_arry[0][ejra]) + "/Periogram_list.txt", "a")
+         f = open( path3+str(video_fol_arry[0][dd11]) + "/Periogram_list.txt", "a")
          f.write(  str(video_fol_arry[aa11][cc11]) +"_Periogram.jpg" +  "\n")
          f.close()  
   
@@ -441,16 +447,18 @@ for x3 in range(0,len(video_fol_arry[0])):
 
          cc11 += 1
 
-         ejra += 1
+         ejra +=1
 
      aa11+=1
 
      bb11+=1
 
-     cc11=0     
+     dd11 += 1
+
+
 
 print()
-print("TEDAD Kol Video ==> ",  ejra)
+print("TEDAD Kol Video ==> ",  dd11)
 
 print()
 print(" THE END ")
