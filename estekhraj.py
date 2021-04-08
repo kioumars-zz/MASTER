@@ -177,7 +177,7 @@ for x3 in range(0,len(video_fol_arry[0])):
          f.close()
 
          print()
-         print("len(l) ==> " ,len(l))
+         print("Image Number ==> " ,len(l))
 
          new_image_name_arry=[]
          f = open(path3+str(video_fol_arry[0][dd11])+"/doc/"+str(video_fol_arry[aa11][cc11])+"_image_name_list.txt", "r")
@@ -226,9 +226,9 @@ for x3 in range(0,len(video_fol_arry[0])):
              steph=h/100
 
              print()
-             print("imgshape =>",first_frame.shape ,"\n")
-             print("h =>",h ,"\n")
-             print("w =>",w ,"\n")
+             print("Image Shape =>",first_frame.shape ,"\n")
+             print("Image Height =>",h ,"\n")
+             print("Image Width =>",w ,"\n")
 
              y, xx11= np.mgrid[steph/2:h:steph, stepw/2:w:stepw].reshape(2,-1).astype(int)
 
@@ -435,12 +435,12 @@ for x3 in range(0,len(video_fol_arry[0])):
 
 
 
-         f = open( path3 + str(video_fol_arry[0][dd11]) + "/Linepoint_list.txt", "a")
-         f.write( str(video_fol_arry[aa11][cc11]) +"_Linepoint.txt" + "\n")
+         f = open( path3 + "Linepoint_list.txt", "a")
+         f.write( path3+str(video_fol_arry[0][dd11]) +"/"+ str(video_fol_arry[aa11][cc11]) +"_Linepoint.txt" + "\n")
          f.close()
 
-         f = open( path3+str(video_fol_arry[0][dd11]) + "/Periogram_list.txt", "a")
-         f.write(  str(video_fol_arry[aa11][cc11]) +"_Periogram.jpg" +  "\n")
+         f = open( path3 + "Periogram_list.txt", "a")
+         f.write(  path3+str(video_fol_arry[0][dd11]) +"/"+ str(video_fol_arry[aa11][cc11]) +"_Periogram.jpg" +  "\n")
          f.close()  
   
          cv2.waitKey(30)
@@ -449,6 +449,10 @@ for x3 in range(0,len(video_fol_arry[0])):
 
          ejra +=1
 
+         print()
+         print("TEDAD Video ==> ",  ejra)
+
+
      aa11+=1
 
      bb11+=1
@@ -456,9 +460,8 @@ for x3 in range(0,len(video_fol_arry[0])):
      dd11 += 1
 
 
-
 print()
-print("TEDAD Kol Video ==> ",  dd11)
+print("TEDAD Pooshe ==> ",  dd11)
 
 print()
 print(" THE END ")
