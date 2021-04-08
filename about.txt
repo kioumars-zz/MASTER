@@ -1,0 +1,13 @@
+Video clips are cut into 16 equal parts
+A frame is separated from the beginning of each piece
+Frames are compared with each other (1 and 2) (2 and 3) and ...
+By comparing the luminous flux is extracted
+The angle and length of the light flux are calculated
+Grouped with Keymines in 256 clusters
+The number of members of each cluster is counted
+An image is drawn with 16 rows and 256 columns
+Colors are the number of members in a cluster
+6766 images are created
+Images become standard datasets
+I train deep convolutional neural network
+Training results are evaluated
